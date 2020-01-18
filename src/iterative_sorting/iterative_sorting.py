@@ -21,13 +21,13 @@ def selection_sort( arr ):
 def bubble_sort( arr ):
 
     # loop through list 
-    for cur_num in range(len(arr)):
+    for cur_index in range(len(arr)):
         # loop through every value before the current one (excluding the final number)
-        for previous_num in range(0, len(arr) - cur_num - 1 ):
+        for index in range(0, len(arr) - cur_index - 1 ):
             # check if previous number is greater than the next number 
-            if arr[previous_num] > arr[previous_num + 1]:
-                # swap the previous number with the next number and vice versa
-                arr[previous_num], arr[previous_num + 1] = arr[previous_num + 1], arr[previous_num]
+            if arr[index] > arr[index + 1]:
+                # swap the previous number with the next number
+                arr[index], arr[index + 1] = arr[index + 1], arr[index]
     return arr
 
 # STRETCH: implement the Count Sort function below

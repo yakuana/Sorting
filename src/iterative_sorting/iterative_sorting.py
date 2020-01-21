@@ -15,6 +15,7 @@ def selection_sort( arr ):
         arr[cur_index], arr[smallest_index] = arr[smallest_index], arr[cur_index]
         
     return arr
+    
 
 
 # TO-DO:  implement the Bubble Sort function below
